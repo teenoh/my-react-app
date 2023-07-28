@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .background-image {
+    /* Set the background image */
+    background-image: url('../../assets/images/LP_one.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+ 
+  .activeClass {
+    border-bottom: 1px solid red;
+  }
+  
+  main {
+   margin-top: 30vh;
+  }
+  .order{
+    margin-left: 5vh;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the value to set the desired gap between columns */
+    margin-top: 5vh;
+    margin-left: 1%;
+  }
+  
+  .column {
+   flex-direction: column;
+    background-color: #f2f2f2;
+    width: 60vh;
+    box-sizing: border-box;
+  }
+  .address{
+    width: 65%;
+    font-size: 18px;
+    color: black;
+  }
+  .location{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .column.address p {
+  position: relative; /* Make sure the ::before pseudo-element is positioned relative to the <p> element */
+  color: #333; /* Set the color for the placeholder text */
+  font-size: 17px;
+}
+
+.column.address p::before {
+  content: "Enter an address..."; /* Set the content of the pseudo-element to the placeholder text */
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+  pointer-events: none; /* Make sure the pseudo-element doesn't interfere with clicks or other events */
+}
+.time{
+    /* Adjust the width, padding, and margin to blend properly with the surrounding content */
+    width: 20%;
+    padding: 8px; /* Adjust the padding as needed */
+    margin: 0; /* Remove any margin to ensure it fits correctly in the column */
+  }
+  
+
+  #fruit-selection{
+
+  }
+
+  
+
+  
+  
