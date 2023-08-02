@@ -1,6 +1,8 @@
+@charset "UTF-8";
 body {
   margin: 0px;
   padding: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
 .background-image {
@@ -13,50 +15,52 @@ body {
 }
 
 .activeClass {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgb(15, 15, 15);
 }
 
 main {
-  margin-top: 30vh;
+  margin-top: 28vh;
 }
 
 .order {
-  margin-left: 5vh;
+  margin-left: 4vh;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 53px;
+  color: #000;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   gap: 10px; /* Adjust the value to set the desired gap between columns */
-  margin-top: 5vh;
-  margin-left: 1%;
+  margin-top: 4vh;
+  margin-left: 0.8%;
 }
 
 .column {
   flex-direction: column;
   background-color: #f2f2f2;
-  width: 60vh;
-  box-sizing: border-box;
 }
 
 .address {
-  width: 65%;
+  width: 47%;
   font-size: 18px;
-  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .location {
-  margin-top: 20px;
+  margin-top: 15.2px;
   margin-left: 20px;
 }
 
-.column.address p {
+.address p {
   position: relative; /* Make sure the ::before pseudo-element is positioned relative to the <p> element */
   color: #333; /* Set the color for the placeholder text */
-  font-size: 17px;
+  opacity: 0.4;
 }
 
-.column.address p::before {
+.address p::before {
   content: "Enter an address..."; /* Set the content of the pseudo-element to the placeholder text */
   position: absolute;
   bottom: 0%;
@@ -66,34 +70,86 @@ main {
 
 .time {
   /* Adjust the width, padding, and margin to blend properly with the surrounding content */
-  width: 20%;
-  margin: 0; /* Remove any margin to ensure it fits correctly in the column */
+  width: 17%;
   background-color: #f1f1f1;
-  border-radius: 8px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-right: auto;
 }
 
 select {
   width: 100%;
+  height: 120%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #fff;
   font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
   box-shadow: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; /* Remove default arrow on some browsers */
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto; /* Remove default arrow on some browsers */
+  margin-right: 90px;
+  text-align: center;
+  position: relative;
 }
 
-select:focus {
-  outline: none;
-  border-color: #007bff;
+/* Style the custom dropdown arrow */
+select::after {
+  content: "▼"; /* Unicode arrow-down character */
+  /* Increase the size of the arrow */
+  font-size: 24px;
+  /* Position the arrow to the right of the select box */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  /* Use transform to scale the arrow without affecting the layout */
+  transform: translateY(-50%) scale(1.2);
+  /* Set arrow color */
+  color: #000;
 }
 
 /* Style the dropdown arrow for Firefox */
 /* Note: This may not work in newer Firefox versions */
 select::-moz-focus-inner {
-  border: 7;
+  border: 0;
+}
+
+/* Style the custom arrow for Internet Explorer */
+select::-ms-expand {
+  display: none; /* Remove arrow in Internet Explorer */
+}
+
+.find-food {
+  /* Adjust the width, padding, and margin to blend properly with the surrounding content */
+  width: 9.2%;
+  margin-right: 23%;
+  border-radius: 10px; /* Adjust the value to control the roundness of the button */
+  color: #000;
+}
+
+.find-foodbtn {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  background-color: #000000;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto; /* Remove default arrow on some browsers */
+  text-align: center;
+  color: #f1f1f1;
+  /*round button */
+  display: inline-block;
+  border: none;
+  border-radius: 10px; /* Adjust the value to control the roundness of the button */
+  cursor: pointer;
+}
+
+.signin_link {
+  margin-left: 40px;
+  margin-top: 24px;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 /*# sourceMappingURL=landingpage.css.map */
