@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/header';
 import '../styles/css/landingpage.scss';
+import { Link } from 'react-router-dom';
 
 
 
@@ -32,14 +33,14 @@ const LandingPage = () => {
 
                 <div className ="column find-food">
                   <button type='button' className='find-foodbtn' >
-                    Find Food
+                   <Link to='/Home'>Find Food</Link>
                   </button>
                 </div>
 
               </div>
           </form>
           <p className='signin_link'>
-          <span>Sign in </span>  <span>for your recent addresses</span> 
+          <span className='signin'>Sign in </span>  <span>for your recent addresses</span> 
           </p>
         </section>
 

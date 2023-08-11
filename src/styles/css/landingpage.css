@@ -137,7 +137,6 @@ select::-ms-expand {
      -moz-appearance: auto;
           appearance: auto; /* Remove default arrow on some browsers */
   text-align: center;
-  color: #f1f1f1;
   /*round button */
   display: inline-block;
   border: none;
@@ -145,9 +144,18 @@ select::-ms-expand {
   cursor: pointer;
 }
 
+a {
+  color: white;
+}
+
 .signin_link {
   margin-left: 40px;
   margin-top: 24px;
   font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.signin {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=landingpage.css.map */

@@ -123,16 +123,14 @@ select::-ms-expand {
 }
   
 
-  .find-food{
-      /* Adjust the width, padding, and margin to blend properly with the surrounding content */
-      width: 9.2%;
-      // align-items: center;
-      margin-right: 23%;
-      border-radius: 10px; /* Adjust the value to control the roundness of the button */
-      color: #000;
-
-
-  }
+.find-food{
+    /* Adjust the width, padding, and margin to blend properly with the surrounding content */
+    width: 9.2%;
+    // align-items: center;
+    margin-right: 23%;
+    border-radius: 10px; /* Adjust the value to control the roundness of the button */
+    color: #000;
+}
  
   .find-foodbtn{
     width: 100%;
@@ -141,7 +139,7 @@ select::-ms-expand {
     background-color: #000000;
     appearance: auto; /* Remove default arrow on some browsers */
     text-align: center;
-    color: #f1f1f1;
+  
    
     /*round button */
     display: inline-block;
@@ -151,12 +149,19 @@ select::-ms-expand {
     cursor: pointer;
   }
 
+  a{
+    color: white;
+  }
+
   .signin_link{
     margin-left: 40px;
     margin-top: 24px;
-    // font-weight: bold;
-     font-family: 'Lato', sans-serif;
-    // font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+  .signin{
+    text-decoration: underline;
+
   }
 
   

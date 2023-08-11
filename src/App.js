@@ -1,14 +1,24 @@
 import React from 'react';
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import '../src/App.scss'
-import LandingPage from '../src/Screens/landingpage';
+import LandingPage from './Screens/landingpage';
+import HomeScreens from './Screens/homeScreens';
 
 
 const App = () => {
   return (
-    <div>
-      <LandingPage />
-      {/* Add other components or content here */}
-    </div>
+    <Router>
+      <div>
+        <Routes>
+
+        <Route path="/" element={<LandingPage />} />
+          <Route path="/Home" element={<HomeScreens />} />
+
+        {/* Add other components or content here */}
+
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
