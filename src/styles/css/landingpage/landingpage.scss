@@ -1,3 +1,4 @@
+
 body {
     margin: 0px;
     padding: 0px;
@@ -5,7 +6,7 @@ body {
   }
   .background-image {
     /* Set the background image */
-    background-image: url('../../assets/images/LP_one.jpg');
+    background-image: url('../../../assets/images/LP_one.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,7 +162,7 @@ select::-ms-expand {
   }
   .signin{
     text-decoration: underline;
-
+    color: #000;
   }
 
   

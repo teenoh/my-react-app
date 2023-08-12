@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/header';
-import '../styles/css/landingpage.scss';
+import '../styles/css/landingpage/landingpage.scss';
 import { Link } from 'react-router-dom';
 
 
@@ -40,7 +40,8 @@ const LandingPage = () => {
               </div>
           </form>
           <p className='signin_link'>
-          <span className='signin'>Sign in </span>  <span>for your recent addresses</span> 
+          <span className='signin'>
+          <Link to='/Login' className='signin' > Sign in</Link> </span>  <span>for your recent addresses</span> 
           </p>
         </section>
 

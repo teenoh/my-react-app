@@ -83,7 +83,7 @@ body {
 }
 
 .app-name {
-  margin-left: 30px;
+  margin-right: 150vh;
   flex-grow: 1;
   text-align: center;
 }
@@ -100,31 +100,37 @@ body {
 }
 
 .right-items {
-  display: flex;
   align-items: center; /* Optional: Align content vertically within the container */
 }
 
 .login {
-  margin-left: 154vh;
-  background-color: #000000;
+  margin-right: 3vh;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.text_color {
+  color: #000000;
 }
 
 .signup {
-  margin-left: 10px;
+  margin-right: 15px;
   background-color: #000000;
+  color: #fff; /* Add your desired text color */
 }
 
 .spanspace {
   margin-right: 5px;
+  color: #000000;
 }
 
 .roundbtn {
   display: inline-block;
-  padding: 20px 20px;
+  padding: 12px 19px;
   border: none;
   border-radius: 50px; /* Adjust the value to control the roundness of the button */
-  color: #fff; /* Add your desired text color */
   font-size: 18px; /* Add your desired font size */
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
 

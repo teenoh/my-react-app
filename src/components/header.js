@@ -1,7 +1,8 @@
 import React, { useState} from 'react';
-import '../styles/css/header.scss'
+import '../styles/css/header/header.scss'
 import uberEatsLogo from '../assets/images/Uber-Eats.png'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -23,13 +24,16 @@ const Header = () => {
           </div>
 
           <div className='right-item'>
+
             <button className='login roundbtn' type='button'>
              <span className="glyphicon glyphicon-user spanspace">
               </span>
-              Log in
+              <Link to='/Login' class='text_color'>Log in</Link>
             </button>
 
-            <button className='signup roundbtn' type='button'>Sign up</button>
+            <button className='signup roundbtn' type='button'>
+            <Link to='/Signup' >Sign up</Link>
+            </button>
           </div>
 
       </nav>
@@ -77,10 +81,10 @@ const Header = () => {
 
           <div className='version'>
           <button className="iphone">
-            {/* <FontAwesomeIcon icon="fa-brands fa-android" /> */}
-              Iphone
+          <i className="fab fa-apple"></i> Iphone
           </button>
-          <button className="android">Android</button>
+          <button className="android">
+          <i className="fab fa-android"></i>Android</button>
           </div>
           
         </div>

@@ -7,7 +7,7 @@ body {
 
 .background-image {
   /* Set the background image */
-  background-image: url("../../assets/images/LP_one.jpg");
+  background-image: url("../../../assets/images/LP_one.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -157,5 +157,6 @@ a {
 
 .signin {
   text-decoration: underline;
+  color: #000;
 }
 /*# sourceMappingURL=landingpage.css.map */
